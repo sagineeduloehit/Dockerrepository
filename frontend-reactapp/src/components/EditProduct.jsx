@@ -61,7 +61,7 @@ function EditProduct() {
             <input type="text" className="form-control" name="description" value={product.description} onChange={handleChange} required />
           </div>
           <div className="mb-3">
-            <label className="form-label"> Prices</label>
+            <label className="form-label"> Price</label>
             <input type="number" className="form-control" name="price" value={product.price} onChange={handleChange} required />
           </div>
           <button type="submit" className="btn btn-primary">Update Product</button>
