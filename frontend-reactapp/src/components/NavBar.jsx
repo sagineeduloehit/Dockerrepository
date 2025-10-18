@@ -14,7 +14,7 @@ function Navbar() {
         <Link className="navbar-brand" to="/">Product API</Link>
         <div className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/add">Add Product</Link>
+            <Link className="nav-link" to="/add">Add  Product</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/">View Products</Link>
