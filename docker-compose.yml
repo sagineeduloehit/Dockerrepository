@@ -4,7 +4,7 @@
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: docker
-      MYSQL_DATABASE: examdbsj
+      MYSQL_DATABASE: examredb
     ports:
       - "3307:3306"
     volumes:
@@ -13,7 +13,7 @@
       - springboot-mysql-net
 
   backend:
-    image: bhargavsai558/2300032558-exam-backend:latest
+    image: loehitsagineedu/backend:latest
     container_name: springboot
     ports:
       - "2025:1426"
@@ -24,7 +24,7 @@
       - springboot-mysql-net
 
   frontend:
-    image: bhargavsai558/2300032558-exam-frontend:latest
+    image: bhargavsai558/frontend:latest
     container_name: react
     ports:
       - "2001:80"
